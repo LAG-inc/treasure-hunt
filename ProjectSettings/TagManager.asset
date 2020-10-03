@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BackgroundStatic
+    uniqueID: 2331509499
+    locked: 0
+  - name: BackgroundCollision
+    uniqueID: 630180727
+    locked: 0
+  - name: Enemies
+    uniqueID: 2031364299
+    locked: 0
+  - name: Player
+    uniqueID: 3966509475
+    locked: 0

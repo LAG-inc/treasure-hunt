@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: f47b94817f14d494c9ef05cb1a3b2066
+=======
+guid: 498678c27a522f640a5014810cfcf7d7
+>>>>>>> basicMove-run
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

@@ -8,7 +8,14 @@
       <e p="Assets" t="Include">
         <e p="_Scripts" t="Include">
           <e p="Camera.cs" t="Include" />
+          <e p="Coin.cs" t="Include" />
+          <e p="Enemy.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
+          <e p="ScriptsForTesting" t="Include">
+            <e p="PlayerForTesting.cs" t="Include" />
+          </e>
+          <e p="SoundTrigger.cs" t="Include" />
           <e p="Triggers.cs" t="Include" />
         </e>
       </e>

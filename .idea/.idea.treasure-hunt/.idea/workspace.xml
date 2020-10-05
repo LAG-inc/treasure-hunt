@@ -20,20 +20,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aabd4a29-1394-4566-a015-67d49b7c60fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/IdleKnight.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/IdleKnight.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/knight_stand_0.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/knight_stand_0.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/knight_stand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/knight_stand.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Enemy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Enemy.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/game_jam.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/game_jam.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Material.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Material.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Enemy.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Enemy.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/FieldOfView.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/FieldOfView.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Enemey-Field.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Enemey-Field.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Treasure.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Treasure.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/knight.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/knight/knight128px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/knight/knight128px.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/knight/knight32px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/knight/knight32px.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/knight/knight64px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/knight/knight64px.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trasnparent.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trasnparent.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptsForFov.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptsForFov/FieldOfView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptsForFov/FieldOfView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptsForFov/FieldOfView.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptsForFov/FieldOfView.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Util.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.treasure-hunt/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.treasure-hunt/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.treasure-hunt/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.treasure-hunt/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.treasure-hunt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.treasure-hunt/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BasicMovement-Run.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BasicMovement-Run.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cam.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cam.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pjs/Treasure.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pjs/Treasure.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pjs/knight.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pjs/knight.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pjs/knight/knight128px.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pjs/knight/knight128px.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pjs/knight/knight32px.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pjs/knight/knight32px.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pjs/knight/knight64px.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pjs/knight/knight64px.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +69,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../Samurai/SamuraiGame/Assets/_scripts/Pjs/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2FEAF16E-8000-4E0C-ADAE-3F2E05F2A3FA/08/4db70696/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65CAB14A-C59E-4552-B77F-98A4AED18F9E/09/891b6a7e/Physics2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2FEAF16E-8000-4E0C-ADAE-3F2E05F2A3FA/67/cf28a354/Mesh.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Util.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2FEAF16E-8000-4E0C-ADAE-3F2E05F2A3FA/80/94bfaac5/SpriteRenderer.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -52,6 +82,8 @@
         <option value="$PROJECT_DIR$/Assets/_Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Camera.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/EnemyPatrol.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Util.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptsForFov/FieldOfView.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Enemy.cs" />
       </list>
     </option>
@@ -70,6 +102,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -104,6 +137,8 @@
       <workItem from="1601750763505" duration="351000" />
       <workItem from="1601753021198" duration="301000" />
       <workItem from="1601790887602" duration="6531000" />
+      <workItem from="1601865661255" duration="9295000" />
+      <workItem from="1601913990399" duration="19888000" />
     </task>
     <servers />
   </component>
@@ -122,12 +157,21 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="714" y="242" key="RiderGenerateDialog" timestamp="1601925758984">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="714" y="242" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1601925758984" />
+    <state x="461" y="184" key="SettingsEditor" timestamp="1601926857545">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="461" y="184" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1601926857545" />
     <state x="616" y="250" width="672" height="677" key="run.anything.popup" timestamp="1601792165873">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

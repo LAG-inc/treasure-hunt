@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 
@@ -14,26 +12,66 @@ public enum patrolType
 
 public class Enemy : MonoBehaviour
 {
-    [FormerlySerializedAs("_patrolType")]
     [SerializeField, Tooltip("Tipo de comportamiento del enemigo, random o con orden")]
     private patrolType patrolType;
 
     [SerializeField] private List<Transform> positions = new List<Transform>();
     [SerializeField, Range(0, 10)] private float velocity;
     [SerializeField, Range(0, 5)] private float sleepTime;
-    [SerializeField, Range(0, 10)] private float visionDistance, rayHeight;
+    private GameObject _player;
 
 
-    private int _currentPosIndex = 0;
+    private int _currentPosIndex;
     private bool _goOn;
     private Coroutine _cPatrol;
     private Vector3 _destiny;
     private SpriteRenderer _renderer;
 
+    private bool _isAlive = true;
+
+    //Prefab del campo de vision(Con esto podemos hacer distintos campos y ajustar parametros)
+    [SerializeField] private GameObject fieldOfViewGO;
+
+    private FieldOfView _fieldOfView;
+
+    //Prueba del editor para determinar el angulo al cual vera el enemigo
+    [SerializeField] private float angle;
+
+
     private void Awake()
     {
         _renderer = GetComponent<SpriteRenderer>();
+        var field = Instantiate(fieldOfViewGO, Vector3.zero, Quaternion.Euler(Vector3.zero));
+        _fieldOfView = field.GetComponent<FieldOfView>();
+        _fieldOfView.ChangeOrigin(transform.position);
+        _currentPosIndex = 0;
+    }
+
+
+    private void Start()
+    {
         _cPatrol = StartCoroutine(Patrol());
+        _fieldOfView.SetEnemy(this.gameObject);
+        _player = GameObject.FindGameObjectWithTag("Player");
+    }
+
+
+    private void Update()
+    {
+        _fieldOfView.ChangeOrigin(transform.position);
+        _fieldOfView.SetAimAngle(angle);
+
+        /* Condiconales del flip del sprite del enemigo, terminar de configurar cuando tengamos la sprite sheet entera
+         if ((_destiny.y < transform.position.y - 1.0f ||
+              _destiny.y > transform.position.y + 1.0f) && (_destiny.x > transform.position.x + 1.0f))
+         {
+             _renderer.flipX = false;
+         }
+        //Insertar animacion de enemigo caminando arriba o abajo
+         else
+         {
+             _renderer.flipX = _destiny.x < transform.position.x - 1.0f;
+         }*/
     }
 
     /// <summary>
@@ -45,15 +83,6 @@ public class Enemy : MonoBehaviour
         _destiny = patrolType == patrolType.OrderPoints
             ? positions[_currentPosIndex].position
             : _destiny = positions[Random.Range(0, positions.Count)].position;
-
-        //Este if es optimnizable
-        if ((_destiny.y < transform.position.y - 1.0f ||
-             _destiny.y > transform.position.y + 1.0f) && (_destiny.x > transform.position.x + 1.0f))
-            _renderer.flipX = false;
-        //Insertar animacion de enemigo caminando arriba o abajo
-        else
-            _renderer.flipX = _destiny.x < transform.position.x - 1.0f;
-
 
         while (transform.position != _destiny)
         {
@@ -72,21 +101,24 @@ public class Enemy : MonoBehaviour
             _currentPosIndex += _goOn ? 1 : -1;
         }
 
-        _cPatrol = StartCoroutine(Patrol());
+        if (_isAlive)
+            _cPatrol = StartCoroutine(Patrol());
     }
 
-    private void OnDrawGizmos()
-    {
-        _renderer = GetComponent<SpriteRenderer>();
 
-        //Revisando medidas del raycast de vision del enemigo
-        Debug.DrawLine(transform.position,
-            new Vector3(transform.position.x + (_renderer.flipX ? -visionDistance : visionDistance),
-                transform.position.y + rayHeight, 0),
-            Color.red);
-        Debug.DrawLine(transform.position,
-            new Vector3(transform.position.x + (_renderer.flipX ? -visionDistance : visionDistance),
-                transform.position.y - rayHeight, 0),
-            Color.red);
+    public void FollowPlayer()
+    {
+        if (_cPatrol != null)
+        {
+            StopCoroutine(_cPatrol);
+            _cPatrol = null;
+            _destiny = _player.transform.position;
+        }
+    }
+
+    public void ReturnPatrol()
+    {
+        if (_cPatrol == null)
+            _cPatrol = StartCoroutine(Patrol());
     }
 }

@@ -12,11 +12,16 @@
           <e p="Enemy.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
+          <e p="ScriptsForFov" t="Include">
+            <e p="FieldOfView.cs" t="Include" />
+          </e>
           <e p="ScriptsForTesting" t="Include">
             <e p="PlayerForTesting.cs" t="Include" />
           </e>
           <e p="SoundTrigger.cs" t="Include" />
+          <e p="Torch.cs" t="Include" />
           <e p="Triggers.cs" t="Include" />
+          <e p="Util.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

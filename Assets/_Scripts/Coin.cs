@@ -1,11 +1,9 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 public class Coin : MonoBehaviour
 {
-    [SerializeField]
-    private CircleCollider2D interactiveTrigger;
-    [SerializeField]
-    private CircleCollider2D soundTrigger;
+    public UnityEvent CoinPickup;
 
     void OnTriggerEnter2D(Collider2D collider)
     {
@@ -13,7 +11,13 @@ public class Coin : MonoBehaviour
         {
             Debug.Log("COLISION INTERACTIVE");
             GameManager.SI.CollectCoin();
-            gameObject.SetActive(false);
+            CoinPickup.Invoke();
         }
+    }
+
+    /// Se usa en la animación Coin_Pickup para ocultar la moneda al finalizar
+    void MarkAsInactive()
+    {
+        gameObject.SetActive(false);
     }
 }

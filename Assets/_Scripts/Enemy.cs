@@ -27,7 +27,28 @@ public class Enemy : MonoBehaviour
     private Vector3 _destiny;
     private SpriteRenderer _renderer;
 
-    private bool _isAlive = true;
+    //Animator 
+    private Animator _animator;
+    private bool _isAlive;
+    private bool _playerNear;
+    private bool _isPatrol;
+
+    private static readonly int AnimIsAlive = Animator.StringToHash("is_alive");
+    private static readonly int AnimPlayerNear = Animator.StringToHash("player_near");
+    private static readonly int AnimIsPatrol = Animator.StringToHash("is_patrol");
+    private static readonly int AnimAttackPlayer = Animator.StringToHash("attack_player");
+
+    private void SetInitialAnim()
+    {
+        _isAlive = true;
+        _playerNear = false;
+        _isPatrol = true;
+
+        _animator.SetBool(AnimIsAlive, _isAlive);
+        _animator.SetBool(AnimPlayerNear, _playerNear);
+        _animator.SetBool(AnimIsPatrol, _isPatrol);
+    }
+
 
     //Prefab del campo de vision(Con esto podemos hacer distintos campos y ajustar parametros)
     [SerializeField] private GameObject fieldOfViewGO;
@@ -40,11 +61,12 @@ public class Enemy : MonoBehaviour
 
     private void Awake()
     {
+        _animator = GetComponent<Animator>();
         _renderer = GetComponent<SpriteRenderer>();
         var field = Instantiate(fieldOfViewGO, Vector3.zero, Quaternion.Euler(Vector3.zero));
         _fieldOfView = field.GetComponent<FieldOfView>();
         _fieldOfView.ChangeOrigin(transform.position);
-        _currentPosIndex = 0;
+        SetInitialAnim();
     }
 
 
@@ -53,6 +75,7 @@ public class Enemy : MonoBehaviour
         _cPatrol = StartCoroutine(Patrol());
         _fieldOfView.SetEnemy(this.gameObject);
         _player = GameObject.FindGameObjectWithTag("Player");
+        _currentPosIndex = 0;
     }
 
 
@@ -61,17 +84,17 @@ public class Enemy : MonoBehaviour
         _fieldOfView.ChangeOrigin(transform.position);
         _fieldOfView.SetAimAngle(angle);
 
-        /* Condiconales del flip del sprite del enemigo, terminar de configurar cuando tengamos la sprite sheet entera
-         if ((_destiny.y < transform.position.y - 1.0f ||
-              _destiny.y > transform.position.y + 1.0f) && (_destiny.x > transform.position.x + 1.0f))
-         {
-             _renderer.flipX = false;
-         }
+
+        if ((_destiny.y < transform.position.y - 1.0f ||
+             _destiny.y > transform.position.y + 1.0f) && (_destiny.x > transform.position.x + 1.0f))
+        {
+            _renderer.flipX = false;
+        }
         //Insertar animacion de enemigo caminando arriba o abajo
-         else
-         {
-             _renderer.flipX = _destiny.x < transform.position.x - 1.0f;
-         }*/
+        else
+        {
+            _renderer.flipX = _destiny.x < transform.position.x - 1.0f;
+        }
     }
 
     /// <summary>

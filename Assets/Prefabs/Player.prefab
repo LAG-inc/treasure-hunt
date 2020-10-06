@@ -104,7 +104,7 @@ Rigidbody2D:
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: 8c151ed1892c0b2488043806f30efd2f, type: 2}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!114 &2184633929848107079
@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1593ef20441eb041b1d31890f9fba5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coins: 0
   velocity: 2
   maxVelocity: 3
 --- !u!61 &2184633929848107099

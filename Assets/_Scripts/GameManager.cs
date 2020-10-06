@@ -2,40 +2,51 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-
 [Serializable]
 public class OnWin : UnityEvent
 {
 }
 
+public enum GameState
+{
+    inGame,
+    pause,
+    gameOver
+}
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager SI;
-
-    [SerializeField]
-    private int coinsInLevel;
-    [SerializeField]
-    private int collectedCoins = 0;
+    public GameState currentGameState = GameState.inGame;
 
     public OnWin onWin;
 
     void Awake()
     {
         SI = SI == null ? this : SI;
-        coinsInLevel = GameObject.FindObjectsOfType(typeof(Coin)).Length;
     }
 
     void Update()
     {
-        if (collectedCoins >= coinsInLevel)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("GANASTE WEY!");
-            onWin.Invoke();
+            SetGameState(GameState.pause);
         }
     }
 
-    public void CollectCoin()
+    public void SetGameState(GameState newGameState)
     {
-        collectedCoins++;
+
+        if (newGameState == GameState.pause)
+        {
+            //Show pause panel 
+            UIManager.sharedInstance.ShowPauseMenu();
+        }
+        else if (newGameState == GameState.gameOver)
+        {
+            //Play game over timeLine 
+        }
+
+        this.currentGameState = newGameState;
     }
 }

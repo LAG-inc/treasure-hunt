@@ -10,7 +10,7 @@ public class Coin : MonoBehaviour
         if (collider.gameObject.CompareTag("Player"))
         {
             Debug.Log("COLISION INTERACTIVE");
-            GameManager.SI.CollectCoin();
+            //GameManager.SI.CollectCoin();
             CoinPickup.Invoke();
         }
     }

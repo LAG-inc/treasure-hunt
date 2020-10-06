@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 414403872137913888}
   m_Layer: 0
-  m_Name: LimCamYop
+  m_Name: LimCamTop
   m_TagString: Untagged
   m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -72,6 +72,7 @@ GameObject:
   - component: {fileID: 414403872782568203}
   - component: {fileID: 414403872782568245}
   - component: {fileID: 414403872782568200}
+  - component: {fileID: 1009039946}
   m_Layer: 0
   m_Name: Cam
   m_TagString: MainCamera
@@ -152,9 +153,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   smoothTime: 4
-  limitTop: {fileID: 414403872137913889}
-  limitBot: {fileID: 414403872421303208}
-  offsetSmooth: 0.5
+  limitTop: {fileID: 414403872137913888}
+  limitBot: {fileID: 414403872421303211}
 --- !u!81 &414403872782568200
 AudioListener:
   m_ObjectHideFlags: 0
@@ -163,3 +163,34 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 414403872782568201}
   m_Enabled: 1
+--- !u!114 &1009039946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414403872782568201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2

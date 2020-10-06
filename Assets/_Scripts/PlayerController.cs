@@ -7,6 +7,9 @@ public class PlayerController : MonoBehaviour
 
     public static PlayerController SI;
 
+    [SerializeField]
+    private int coins;
+
     [SerializeField, Range(0, 2), Tooltip("Velocidad del cofre normal(Menor al smoothTime de la camara)")]
     private float velocity;
 
@@ -32,9 +35,26 @@ public class PlayerController : MonoBehaviour
         _playerRb.velocity = _direction != Vector2.zero ? _direction.normalized * _currentVelocity : Vector2.zero;
     }
 
-
     public float GetCurrentVelocity()
     {
         return _currentVelocity;
+    }
+
+    public void AddCoin(int coins = 1)
+    {
+        this.coins += coins;
+    }
+
+    public bool SubtractCoins(int coins)
+    {
+        if (this.coins >= coins)
+        {
+            this.coins -= coins;
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }

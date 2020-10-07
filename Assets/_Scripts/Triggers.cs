@@ -1,21 +1,20 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
 
 public class Triggers : MonoBehaviour
 {
-    public UnityEvent Join;
-    public UnityEvent Exit;
+    public UnityEvent join;
+    public UnityEvent exit;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
-            Join.Invoke();
+            join.Invoke();
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
-            Exit.Invoke();
+            exit.Invoke();
     }
 }

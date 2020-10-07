@@ -1,85 +1,100 @@
 fileFormatVersion: 2
-guid: 34270239905c4ba4ca1c940b4cdf878a
+guid: 441a4543e3d2fa44da3a28da540d23bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3104812019221112791
-    second: Treasure Chest better_0
+      213: -3878557786174838139
+    second: ground_0
   - first:
-      213: 3616873714284843702
-    second: Treasure Chest better_1
+      213: -4419227343285247731
+    second: ground_1
   - first:
-      213: -3095516874807804126
-    second: Treasure Chest better_2
+      213: -1977380741081267030
+    second: ground_2
   - first:
-      213: 6623527197253836642
-    second: Treasure Chest better_3
+      213: 2270332835960527861
+    second: ground_3
   - first:
-      213: -6290030936527786176
-    second: Treasure Chest better_4
+      213: 5602472716659199906
+    second: ground_4
   - first:
-      213: -7055914809609523737
-    second: Treasure Chest better_5
+      213: -5561606140109812095
+    second: ground_5
   - first:
-      213: 3655062801461326962
-    second: Treasure Chest better_6
+      213: 1269115465126947162
+    second: ground_6
   - first:
-      213: -2485944401084849060
-    second: Treasure Chest better_7
+      213: 6922181128366143233
+    second: ground_7
   - first:
-      213: -1548548579889530786
-    second: Treasure Chest better_8
+      213: 6955847195254428025
+    second: ground_8
   - first:
-      213: 6060855090749904044
-    second: Treasure Chest better_9
+      213: 3215127950514980561
+    second: ground_9
   - first:
-      213: 4060128289370635753
-    second: Treasure Chest better_10
+      213: 1481100579729305086
+    second: ground_10
   - first:
-      213: -1771623636715485252
-    second: Treasure Chest better_11
+      213: 1363345801621341485
+    second: ground_11
   - first:
-      213: -5108425122928280409
-    second: Treasure Chest better_12
+      213: 3809333609213854930
+    second: ground_12
   - first:
-      213: -1289466214898282338
-    second: Treasure Chest better_0
+      213: -7568449251786254984
+    second: ground_13
   - first:
-      213: -909437020161187532
-    second: Treasure Chest better_1
+      213: -9118316241333876284
+    second: ground_14
   - first:
-      213: -2825234939091884466
-    second: Treasure Chest better_2
+      213: -8622955259584057489
+    second: ground_0
   - first:
-      213: 7908969107181957849
-    second: Treasure Chest better_3
+      213: -6011291928743128483
+    second: ground_1
   - first:
-      213: 3418795879139271333
-    second: Treasure Chest better_4
+      213: 7164117211276096799
+    second: ground_2
   - first:
-      213: -1011727215435023320
-    second: Treasure Chest better_5
+      213: 8944976110186011379
+    second: ground_3
   - first:
-      213: 5608879569412684151
-    second: Treasure Chest better_6
+      213: -6465205034976155811
+    second: ground_4
   - first:
-      213: -4143168666848903685
-    second: Treasure Chest better_7
+      213: 554427005153745649
+    second: ground_5
   - first:
-      213: -2129735220110845438
-    second: Treasure Chest better_8
+      213: 5790751955430099184
+    second: ground_6
   - first:
-      213: 5538956105508280740
-    second: Treasure Chest better_9
+      213: 4621178715230502523
+    second: ground_7
   - first:
-      213: 4612381795506171035
-    second: Treasure Chest better_10
+      213: 5779547548873019341
+    second: ground_8
   - first:
-      213: 7402073318161497385
-    second: Treasure Chest better_11
+      213: -27160611260363747
+    second: ground_9
   - first:
-      213: 1612893322708620870
-    second: Treasure Chest better_12
+      213: 803977327059667561
+    second: ground_10
+  - first:
+      213: -1978324154368180905
+    second: ground_11
+  - first:
+      213: 3366708735759216648
+    second: ground_12
+  - first:
+      213: 1579575180814140168
+    second: ground_13
+  - first:
+      213: 6091412490064472182
+    second: ground_14
+  - first:
+      213: 6740115482885086893
+    second: ground_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,7 +124,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -123,7 +138,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -139,7 +154,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -151,7 +166,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -163,19 +178,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
-    maxTextureSize: 1024
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -187,7 +190,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -201,13 +204,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Treasure Chest better_0
+      name: ground_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 101
-        width: 28
-        height: 25
+        x: 0
+        y: 166
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e90de173f45ea1ee0800000000000000
-      internalID: -1289466214898282338
+      spriteID: f6fe766b0eb155880800000000000000
+      internalID: -8622955259584057489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treasure Chest better_1
+      name: ground_1
       rect:
         serializedVersion: 2
         x: 33
-        y: 101
-        width: 28
-        height: 24
+        y: 166
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,20 +239,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 431e3bb39d70163f0800000000000000
-      internalID: -909437020161187532
+      spriteID: d52d71a07d9939ca0800000000000000
+      internalID: -6011291928743128483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treasure Chest better_2
+      name: ground_2
       rect:
         serializedVersion: 2
-        x: 65
-        y: 101
-        width: 28
-        height: 25
+        x: 66
+        y: 166
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,20 +260,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e46e768aacfbac8d0800000000000000
-      internalID: -2825234939091884466
+      spriteID: f15bf5385ae0c6360800000000000000
+      internalID: 7164117211276096799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treasure Chest better_3
+      name: ground_3
       rect:
         serializedVersion: 2
-        x: 97
-        y: 101
-        width: 28
-        height: 23
+        x: 99
+        y: 166
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,20 +281,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d27e1ddf7d42cd60800000000000000
-      internalID: 7908969107181957849
+      spriteID: 3fa1ef33160f22c70800000000000000
+      internalID: 8944976110186011379
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treasure Chest better_4
+      name: ground_4
       rect:
         serializedVersion: 2
-        x: 1
-        y: 69
-        width: 29
-        height: 25
+        x: 132
+        y: 166
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,20 +302,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a26aaf0db0027f20800000000000000
-      internalID: 3418795879139271333
+      spriteID: d57ed2a564af646a0800000000000000
+      internalID: -6465205034976155811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treasure Chest better_5
+      name: ground_5
       rect:
         serializedVersion: 2
-        x: 33
-        y: 69
-        width: 29
-        height: 24
+        x: 0
+        y: 133
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,83 +323,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82c766a357f95f1f0800000000000000
-      internalID: -1011727215435023320
+      spriteID: 1fa92187c68b1b700800000000000000
+      internalID: 554427005153745649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treasure Chest better_6
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 69
-        width: 29
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 779f9c2504eb6dd40800000000000000
-      internalID: 5608879569412684151
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Treasure Chest better_7
-      rect:
-        serializedVersion: 2
-        x: 97
-        y: 69
-        width: 29
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bfd31f78c028086c0800000000000000
-      internalID: -4143168666848903685
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Treasure Chest better_8
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 37
-        width: 29
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20a97a3e919a172e0800000000000000
-      internalID: -2129735220110845438
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Treasure Chest better_9
+      name: ground_6
       rect:
         serializedVersion: 2
         x: 33
-        y: 37
-        width: 29
-        height: 25
+        y: 133
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -404,20 +344,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a95d473b335edc40800000000000000
-      internalID: 5538956105508280740
+      spriteID: 0f84fc50932ec5050800000000000000
+      internalID: 5790751955430099184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treasure Chest better_10
+      name: ground_7
       rect:
         serializedVersion: 2
-        x: 65
-        y: 37
-        width: 29
-        height: 24
+        x: 66
+        y: 133
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -425,20 +365,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9caf993ec8720040800000000000000
-      internalID: 4612381795506171035
+      spriteID: b7ef8e4be89b12040800000000000000
+      internalID: 4621178715230502523
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treasure Chest better_11
+      name: ground_8
       rect:
         serializedVersion: 2
-        x: 97
-        y: 37
-        width: 29
-        height: 25
+        x: 0
+        y: 100
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -446,20 +386,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92db96a077279b660800000000000000
-      internalID: 7402073318161497385
+      spriteID: dcf4e05dfd3153050800000000000000
+      internalID: 5779547548873019341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treasure Chest better_12
+      name: ground_9
       rect:
         serializedVersion: 2
-        x: 1
-        y: 8
-        width: 29
-        height: 22
+        x: 33
+        y: 100
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -467,8 +407,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64695a87ee5226610800000000000000
-      internalID: 1612893322708620870
+      spriteID: d1c81f561918f9ff0800000000000000
+      internalID: -27160611260363747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_10
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 100
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a0cda8e1d482b00800000000000000
+      internalID: 803977327059667561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_11
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 67
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d3f48c9a49b84e0800000000000000
+      internalID: -1978324154368180905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800f121f1c3f8be20800000000000000
+      internalID: 3366708735759216648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_13
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 34
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803437c0247cbe510800000000000000
+      internalID: 1579575180814140168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_14
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 34
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 678aba2d26b098450800000000000000
+      internalID: 6091412490064472182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_15
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daed97e2253b98d50800000000000000
+      internalID: 6740115482885086893
       vertices: []
       indices: 
       edges: []

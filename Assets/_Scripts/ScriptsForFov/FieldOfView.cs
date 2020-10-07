@@ -5,12 +5,14 @@ using UnityEngine.Events;
 
 public class FieldOfView : MonoBehaviour
 {
+    [SerializeField] private Material[] meshMaterials;
+    private MeshRenderer _meshRenderer;
+
     //Variables para determinar si el jugador toca algun raycast
     [SerializeField] private LayerMask playerMask;
     private bool _playerInZone;
     private GameObject _ownEnemy;
     private Enemy _enemy;
-
 
     //Mesh y propiedades
     private Mesh _mesh;
@@ -61,6 +63,7 @@ public class FieldOfView : MonoBehaviour
 
     private void Awake()
     {
+        _meshRenderer = GetComponent<MeshRenderer>();
     }
 
     private void Start()
@@ -72,6 +75,7 @@ public class FieldOfView : MonoBehaviour
     }
 
     //El enemigo debe poner la dirección  y el origen antess
+
     private void LateUpdate()
     {
         //Aumento del angulo segun el campo de vision y la cantidad de rayos 
@@ -126,12 +130,13 @@ public class FieldOfView : MonoBehaviour
 
             if (i != rayCount || _playerInZone) continue;
             _enemy.ReturnPatrol();
-        }
 
-        //Asignarle a la malla los valores establecidos para que se dibuje
-        _mesh.vertices = _vertices;
-        _mesh.uv = _uv;
-        _mesh.triangles = _triangles;
+
+            //Asignarle a la malla los valores establecidos para que se dibuje
+            _mesh.vertices = _vertices;
+            _mesh.uv = _uv;
+            _mesh.triangles = _triangles;
+        }
     }
 
     /// <summary>
@@ -166,5 +171,11 @@ public class FieldOfView : MonoBehaviour
     public void SetEnemy(GameObject lEnemy)
     {
         _ownEnemy = lEnemy;
+    }
+
+
+    public void SetDrawZone(bool lIsDrawing)
+    {
+        _meshRenderer.material = lIsDrawing ? meshMaterials[0] : meshMaterials[1];
     }
 }

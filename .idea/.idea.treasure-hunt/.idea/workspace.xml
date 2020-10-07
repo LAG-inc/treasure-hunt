@@ -20,105 +20,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aabd4a29-1394-4566-a015-67d49b7c60fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Treasure.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Treasure/Die.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Treasure/Die.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Treasure/Idle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Treasure/Idle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Treasure/IdleDown.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Treasure/IdleDown.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Treasure/IdleLeft.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Treasure/IdleLeft.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Treasure/IdleRight.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Treasure/IdleRight.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Treasure/IdleUp.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Treasure/IdleUp.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Treasure/Treasure Chest better_10.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Treasure/Treasure Chest better_10.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Treasure/WalkDown.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Treasure/WalkDown.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Treasure/WalkLeft.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Treasure/WalkLeft.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Treasure/WalkRight.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Treasure/WalkRight.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Treasure/WalkUp.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Treasure/WalkUp.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/knight.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/knight/Attack.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/knight/Attack.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/knight/Die.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/knight/Die.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/knight/IdleR.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/knight/IdleR.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/knight/Knight.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/knight/Knight.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/knight/Run.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/knight/Run.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/knight/Walk.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/knight/Walk.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Pjs/Player.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Pjs/Player.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Enemy-playerp2.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Enemy-playerp2.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummies.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummies/Treasure.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummies/Treasure.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummies/knight.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummies/knight/knight.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummies/knight/knight/knight128px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummies/knight/knight/knight128px.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummies/knight/knight/knight32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummies/knight/knight/knight32px.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummies/knight/knight/knight64px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummies/knight/knight/knight64px.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummies/knight/knight128px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummies/knight/knight128px.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummies/knight/knight32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummies/knight/knight32px.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummies/knight/knight64px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummies/knight/knight64px.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummies/knight_stand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummies/knight_stand.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Treasure Chest better.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Treasure Chest better.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/knight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/knight.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/NoBounce.physicsMaterial2D" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/NoBounce.physicsMaterial2D.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/NoColor.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/NoColor.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/RedTransparent.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/RedTransparent.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/RedTexture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/RedTexture.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.treasure-hunt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.treasure-hunt/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/IdleKnight.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/IdleKnight.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/LightBeat.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/LightBeat.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/LightBeat.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/LightBeat.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/knight_stand_0.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/knight_stand_0.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2Dmaterials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2Dmaterials.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2Dmaterials/NoBounce.physicsMaterial2D.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2Dmaterials/NoBounce.physicsMaterial2D.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Coin/Coin.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Coin/Coin.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/knight/IdleR.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/knight/IdleR.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Material.mat.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/EnemyPatrolSystem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/EnemyPatrolSystem.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pjs/Treasure.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pjs/Treasure.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pjs/knight.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pjs/knight/knight128px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pjs/knight/knight128px.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pjs/knight/knight32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pjs/knight/knight32px.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pjs/knight/knight64px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pjs/knight/knight64px.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Treasure.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Treasure.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/knight.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/knight/knight128px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/knight/knight128px.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/knight/knight32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/knight/knight32px.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/knight/knight64px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/knight/knight64px.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/knight_stand.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/knight_stand.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/FieldOfView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/FieldOfView.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Enemy-playerp2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Enemy-playerp2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Trasnparent.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Trasnparent.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Camera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Camera.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/ScriptsForFov/FieldOfView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptsForFov/FieldOfView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/ScriptsForFov/FieldOfView.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/ScriptsForFov/FieldOfView.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Triggers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Triggers.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,11 +69,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/_Scripts/Camera.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/EnemyPatrol.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Util.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptsForFov/FieldOfView.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Triggers.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Camera.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptsForFov/FieldOfView.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Enemy.cs" />
       </list>
     </option>
@@ -239,5 +169,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="616" y="250" width="672" height="677" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1601792165873" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1602039136094">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1602039136094" />
   </component>
 </project>

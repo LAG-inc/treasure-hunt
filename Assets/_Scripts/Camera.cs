@@ -16,10 +16,6 @@ public class Camera : MonoBehaviour
         if (target.transform.position.y >= limitTop.position.y ||
             target.transform.position.y <= limitBot.position.y)
         {
-            // transform.position = Vector3.Lerp(transform.position,
-            //     new Vector3(transform.position.x, target.position.y, -10f),
-            //     camVelocity * Time.deltaTime);
-
             transform.position = Vector3.SmoothDamp(transform.position,
                 new Vector3(transform.position.x,
                     target.position.y,
@@ -27,6 +23,7 @@ public class Camera : MonoBehaviour
                 ref _velocity,
                 smoothTime - PlayerController.SI.GetCurrentVelocity());
         }
+
         else
             _velocity = Vector3.zero;
     }

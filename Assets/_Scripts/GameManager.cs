@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager SI;
     public GameState currentGameState = GameState.inGame;
+    public UnityEvent GameOver;
 
     public OnWin onWin;
 
@@ -45,6 +46,7 @@ public class GameManager : MonoBehaviour
         else if (newGameState == GameState.gameOver)
         {
             //Play game over timeLine 
+            GameOver.Invoke();
         }
 
         this.currentGameState = newGameState;

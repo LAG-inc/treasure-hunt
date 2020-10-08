@@ -5,7 +5,7 @@ using UnityEngine;
 public class SFXManager : MonoBehaviour
 {
     //Referencias a los audios source respectivos
-    public AudioSource alerta, herida, muerte, salto, paso;
+    public AudioSource fuego, moneda, caminar, e_ehh, e_hmm, e_oh;
 
     
 }

@@ -26,14 +26,23 @@ public class UIManager : MonoBehaviour
     #region inGame
 
     //Texto de la cant de monedas     
-    public Text coinsText;
-    //public TextMeshProUGUI coinsText;
-    //Cuenta regresiva para reanudar el juego    
-    //public TextMeshProUGUI countDownResumeText;
-    //Boton de pausa    
-    //public GameObject pauseButton;
+    [SerializeField]
+    private Text coinsText;
+    //Texto monedas necesarias para abrir puerta
+    [SerializeField]
+    private Text coinsToDoorText;
+    //Contenedor de aviso monedas para abrir puerta
+    [SerializeField]
+    private GameObject coinsToDoorContainer;
+    //Color monedas suficientes
+    [SerializeField]
+    private Color coinsObtained;
+    //Color monedas insuficientes
+    [SerializeField]
+    private Color coinsMissing;
     //Contenedor de la UI en el juego      
-    public GameObject hud;
+    [SerializeField]
+    private GameObject hud;
     #endregion
 
     #region inPause
@@ -53,6 +62,29 @@ public class UIManager : MonoBehaviour
 
     //StringBuilder sb = new StringBuilder();
 
+    public void ShowCoinsToDoor(int unlockPrice, bool obtained)
+    {
+        coinsToDoorText.text = unlockPrice.ToString();
+        ChangeColorCoinsToDoor(obtained);
+        coinsToDoorContainer.SetActive(true);
+    }
+
+    public void HideCoinsToDoor()
+    {
+        coinsToDoorContainer.SetActive(false);
+    }
+
+    public void ChangeColorCoinsToDoor(bool obtained)
+    {
+        if (obtained)
+        {
+            coinsToDoorText.color = coinsObtained;
+        }
+        else
+        {
+            coinsToDoorText.color = coinsMissing;
+        }
+    }
 
     public void ShowPauseMenu()
     {
@@ -76,8 +108,8 @@ public class UIManager : MonoBehaviour
         //TODO ¿Que variables se mantendran?
     }
 
-    //Metodo que actualiza la puntuacion en la hud    
-    public void ResfreshTextScore(int currentCoins)
+    //Metodo que actualiza las monedas en la hud    
+    public void ResfreshCoinsText(int currentCoins)
     {
         //Asignamos al objeto Texto la cant de monedas formateada a un digito
         coinsText.text = currentCoins.ToString("0");

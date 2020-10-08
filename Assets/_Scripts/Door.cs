@@ -21,5 +21,23 @@ public class Door : MonoBehaviour
                 DoorClose.Invoke();
             }
         }
+
+        
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            UIManager.sharedInstance.ShowCoinsToDoor(unlockPrice, PlayerController.SI.SubtractCoins(unlockPrice));
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            UIManager.sharedInstance.HideCoinsToDoor();
+        }
     }
 }

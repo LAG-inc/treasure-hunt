@@ -56,7 +56,7 @@ MonoBehaviour:
   rayCount: 50
   layerHit:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 2304
 --- !u!33 &8665198276570178493
 MeshFilter:
   m_ObjectHideFlags: 0

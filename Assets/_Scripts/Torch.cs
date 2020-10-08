@@ -18,6 +18,7 @@ public class Torch : MonoBehaviour
     {
         if (collider.gameObject.CompareTag("Player"))
         {
+            SFXManager.SI.PlaySound(Sound.fuego);
             _torch.enabled = true;
             _anim.SetTrigger("TurnOn");
             _collider.enabled = false;

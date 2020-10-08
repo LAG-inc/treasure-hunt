@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1593ef20441eb041b1d31890f9fba5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coins: 0
+  initialPosition: {fileID: 0}
   velocity: 2
   extraVelocity: 1.5
 --- !u!61 &2184633929848107099
@@ -228,7 +228,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 2
+  m_PointLightOuterRadius: 3.7
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5

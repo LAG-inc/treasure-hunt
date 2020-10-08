@@ -16,6 +16,8 @@ public enum GameState
 
 public class GameManager : MonoBehaviour
 {
+    private Enemy[] _enemiesInScene;
+
     public static GameManager SI;
     public GameState currentGameState = GameState.inGame;
     public UnityEvent GameOver;
@@ -27,18 +29,32 @@ public class GameManager : MonoBehaviour
         SI = SI == null ? this : SI;
     }
 
+    private void Start()
+    {
+        _enemiesInScene = FindObjectsOfType<Enemy>();
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             SetGameState(GameState.pause);
         }
+
+        if (currentGameState != GameState.gameOver || !Input.GetKeyDown(KeyCode.R)) return;
+        PlayerController.SI.RestartValues();
+        foreach (var enemy in _enemiesInScene)
+        {
+            enemy.Rebind();
+        }
+
+        SetGameState(GameState.inGame);
     }
 
     public void SetGameState(GameState newGameState)
     {
-
         if (newGameState == GameState.pause)
+
         {
             //Show pause panel 
             UIManager.sharedInstance.ShowPauseMenu();

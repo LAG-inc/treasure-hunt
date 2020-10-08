@@ -39,8 +39,8 @@ public class UIManager : MonoBehaviour
     #region inPause
 
     //Buttons
-    public GameObject exitButton;
-    public GameObject resumeButton;
+    //public GameObject exitButton;
+    //public GameObject resumeButton;
 
     //Texto de la cant de monedas
     //public Text totalCoins;
@@ -51,7 +51,7 @@ public class UIManager : MonoBehaviour
 
     #endregion
 
-    StringBuilder sb = new StringBuilder();
+    //StringBuilder sb = new StringBuilder();
 
 
     public void ShowPauseMenu()

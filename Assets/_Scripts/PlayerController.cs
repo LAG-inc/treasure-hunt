@@ -98,8 +98,6 @@ public class PlayerController : MonoBehaviour
 
                 _animator.SetBool(AnimIsMoving, _isMoving);
             }
-            else
-                _playerRb.isKinematic = false;
         }
         else
             _playerRb.velocity = Vector2.zero;
@@ -177,7 +175,6 @@ public class PlayerController : MonoBehaviour
 
     public void RestartValues()
     {
-        _playerRb.isKinematic = true;
         SetInitialAnim();
         _animator.Rebind();
         transform.position = _initialPosition;

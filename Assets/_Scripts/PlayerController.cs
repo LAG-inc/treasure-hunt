@@ -1,14 +1,23 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
 public class PlayerController : MonoBehaviour
 {
-    private Rigidbody2D _playerRb;
+    private float _timeBeetWeenSteps = 0;
+    private int _soundIndex = 0;
+    private Coroutine _cSound;
 
+    [SerializeField,
+     Tooltip(
+         "Puedes asignarle un punto de inicio o bien tomara el punto donde se le coloque en la escena como punto inicial")]
+    private Transform initialPosition;
+
+    private Vector3 _initialPosition;
+    private Rigidbody2D _playerRb;
     public static PlayerController SI;
 
-    [SerializeField]
-    private int coins;
+    private int _coins;
 
     [SerializeField, Range(0, 2), Tooltip("Velocidad del cofre normal(Menor al smoothTime de la camara)")]
     private float velocity;
@@ -35,6 +44,8 @@ public class PlayerController : MonoBehaviour
 
     private void SetInitialAnim()
     {
+        _isAlive = true;
+        _isMoving = false;
         _animator.SetBool(AnimIsAlive, _isAlive);
         _animator.SetBool(AnimIsMoving, _isMoving);
         _animator.SetFloat(AnimLastVertical, -1.0f);
@@ -43,39 +54,80 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        _coins = 0;
+        _initialPosition = initialPosition == null ? transform.position : initialPosition.position;
         _animator = GetComponent<Animator>();
         SI = SI == null ? this : SI;
         _playerRb = GetComponent<Rigidbody2D>();
-        _isAlive = true;
-        _isMoving = false;
         SetInitialAnim();
     }
 
 
     private void FixedUpdate()
     {
-        if (_isAlive)
+        if (GameManager.SI.currentGameState == GameState.inGame)
         {
-            _currentVelocity = Input.GetKey(KeyCode.LeftShift) ? velocity + extraVelocity : velocity;
-
-            _direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-
-            _playerRb.velocity = _direction != Vector2.zero ? _direction.normalized * _currentVelocity : Vector2.zero;
-
-
-            _isMoving = _playerRb.velocity != Vector2.zero;
-
-            //Manejable con axis y _playerRb.Velocity. Con los axis es mas preciso.
-            if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0 || Mathf.Abs(Input.GetAxis("Vertical")) > 0)
+            if (_isAlive)
             {
-                _animator.SetFloat(AnimLastHorizontal, Input.GetAxis("Horizontal"));
-                _animator.SetFloat(AnimLastVertical, Input.GetAxis("Vertical"));
-            }
+                _currentVelocity = Input.GetKey(KeyCode.LeftShift) ? velocity + extraVelocity : velocity;
 
-            _animator.SetBool(AnimIsMoving, _isMoving);
+                _direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+
+                _playerRb.velocity =
+                    _direction != Vector2.zero ? _direction.normalized * _currentVelocity : Vector2.zero;
+
+
+                _isMoving = _playerRb.velocity != Vector2.zero;
+
+                //Manejable con axis y _playerRb.Velocity. Con los axis es mas preciso.
+                if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0 || Mathf.Abs(Input.GetAxisRaw("Vertical")) > 0)
+                {
+                    _animator.SetFloat(AnimLastHorizontal, Input.GetAxisRaw("Horizontal"));
+                    _animator.SetFloat(AnimLastVertical, Input.GetAxisRaw("Vertical"));
+
+                    _cSound = _cSound == null ? StartCoroutine(WalkSound()) : _cSound;
+                }
+                else
+                {
+                    _timeBeetWeenSteps = 0.7f;
+                    if (_cSound != null)
+                        StopCoroutine(_cSound);
+                    _cSound = null;
+                }
+
+
+                _animator.SetBool(AnimIsMoving, _isMoving);
+            }
+            else
+                _playerRb.isKinematic = false;
         }
         else
             _playerRb.velocity = Vector2.zero;
+    }
+
+
+    private IEnumerator WalkSound()
+    {
+        _timeBeetWeenSteps -= _currentVelocity / 10;
+        while (_timeBeetWeenSteps > 0)
+        {
+            _timeBeetWeenSteps -= 0.1f;
+            yield return new WaitForSeconds(0.1f);
+        }
+
+        _soundIndex = _soundIndex == 1 ? 0 : 1;
+        switch (_soundIndex)
+        {
+            case 1:
+                SFXManager.SI.PlaySound(Sound.caminarD);
+                break;
+            case 0:
+                SFXManager.SI.PlaySound(Sound.CaminarI);
+                break;
+        }
+
+        _timeBeetWeenSteps = 0.7f;
+        _cSound = null;
     }
 
     public float GetCurrentVelocity()
@@ -87,24 +139,39 @@ public class PlayerController : MonoBehaviour
     {
         _isAlive = false;
         _animator.SetBool(AnimIsAlive, _isAlive);
+        Invoke(nameof(GameOverState), 1.5f);
+    }
+
+
+    private void GameOverState()
+    {
+        GameManager.SI.SetGameState(GameState.gameOver);
     }
 
     public void AddCoin(int coins = 1)
     {
-        this.coins += coins;
+        _coins += coins;
+        UIManager.sharedInstance.ResfreshCoinsText(_coins);
     }
 
     public bool SubtractCoins(int coins)
     {
-        if (this.coins >= coins)
+        if (_coins >= coins)
         {
-            this.coins -= coins;
+            _coins -= coins;
+            UIManager.sharedInstance.ResfreshCoinsText(_coins);
             return true;
         }
-        else
-        {
-            return false;
-        }
+
+        return false;
+    }
+
+
+    public void RestartValues()
+    {
+        _playerRb.isKinematic = true;
+        SetInitialAnim();
+        _animator.Rebind();
+        transform.position = _initialPosition;
     }
 }
-

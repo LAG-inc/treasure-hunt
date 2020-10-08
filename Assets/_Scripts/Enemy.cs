@@ -13,6 +13,8 @@ public enum patrolType
 
 public class Enemy : MonoBehaviour
 {
+    private Vector3 _initialPosition;
+
     [SerializeField, Tooltip("Tipo de comportamiento del enemigo, random o con orden")]
     private patrolType patrolType;
 
@@ -21,10 +23,12 @@ public class Enemy : MonoBehaviour
 
     [SerializeField, Range(0, 5)] private float sleepTime;
 
-
+    private static int _currentSoundI;
     private int _currentPosIndex;
     private bool _goOn;
     private Coroutine _cPatrol;
+    private Coroutine _cSound;
+
     private Vector3 _destiny;
     private SpriteRenderer _renderer;
     private bool _playerInFollowZone;
@@ -41,8 +45,6 @@ public class Enemy : MonoBehaviour
     private static readonly int AnimIsPatrol = Animator.StringToHash("is_patrol");
     private static readonly int AnimAttackPlayer = Animator.StringToHash("attack_player");
 
-
-    private bool _dummyInGame;
 
     private void SetInitialAnim()
     {
@@ -67,8 +69,8 @@ public class Enemy : MonoBehaviour
 
     private void Awake()
     {
+        _initialPosition = transform.position;
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        _dummyInGame = true;
         _playerInFollowZone = false;
         _animator = GetComponent<Animator>();
         _renderer = GetComponent<SpriteRenderer>();
@@ -90,12 +92,38 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
+        _animator.enabled = GameManager.SI.currentGameState == GameState.inGame;
+
+
         _fieldOfView.ChangeOrigin(transform.position);
         _animator.SetBool(AnimIsPatrol, _isPatrol);
-        if (_cPatrol != null || !_dummyInGame) return;
+        if (_cPatrol != null || GameManager.SI.currentGameState != GameState.inGame) return;
         _destiny = PlayerController.SI.transform.position;
         transform.position = Vector3.MoveTowards(transform.position, _destiny, runVelocity * Time.deltaTime);
         SetDirection();
+    }
+
+
+    private IEnumerator SoundsCoroutine()
+    {
+        //Podriamos usar los booleanos de playerNear, pero no recuerdo como los configure del todo y ya es noche xD
+        _currentSoundI = _currentSoundI > 2 || _currentSoundI < 0 ? 0 : _currentSoundI + 1;
+        switch (_currentSoundI)
+        {
+            case 0:
+                SFXManager.SI.PlaySound(Sound.e_ehh);
+                break;
+            case 1:
+                SFXManager.SI.PlaySound(Sound.e_hmm);
+                break;
+            case 2:
+                SFXManager.SI.PlaySound(Sound.e_oh);
+                break;
+        }
+
+        yield return new WaitForSeconds(3.0f);
+        yield return new WaitUntil(() => GameManager.SI.currentGameState == GameState.inGame);
+        _cSound = _isPatrol ? null : StartCoroutine(SoundsCoroutine());
     }
 
     /// <summary>
@@ -104,7 +132,6 @@ public class Enemy : MonoBehaviour
     /// <returns></returns>
     private IEnumerator Patrol()
     {
-        if (!_dummyInGame) yield break;
         _destiny = patrolType == patrolType.OrderPoints
             ? positions[_currentPosIndex].position
             : _destiny = positions[Random.Range(0, positions.Count)].position;
@@ -112,6 +139,9 @@ public class Enemy : MonoBehaviour
         _isPatrol = true;
         while (transform.position != _destiny)
         {
+            if (GameManager.SI.currentGameState != GameState.inGame)
+                yield return new WaitUntil(() => GameManager.SI.currentGameState == GameState.inGame);
+
             //Al momento de detectar colisiiones es posible que tengamos que ocupar rigid bodies 
             transform.position = Vector3.MoveTowards(transform.position, _destiny, velocity * Time.deltaTime);
             yield return new WaitForFixedUpdate();
@@ -153,7 +183,9 @@ public class Enemy : MonoBehaviour
 
     public void FollowPlayer()
     {
-        if (_cPatrol == null || !_dummyInGame) return;
+        if (_cPatrol == null || GameManager.SI.currentGameState != GameState.inGame) return;
+        if (_cSound == null)
+            _cSound = StartCoroutine(SoundsCoroutine());
         _fieldOfView.SetDrawZone(false);
         StopCoroutine(_cPatrol);
         _isPatrol = false;
@@ -177,19 +209,28 @@ public class Enemy : MonoBehaviour
     public void TakeTreasure()
     {
         _rigidbody2D.velocity = Vector2.zero;
-        _dummyInGame = false;
+        StopAllCoroutines();
+        SFXManager.SI.PlaySound(Sound.e_oh);
+        _rigidbody2D.velocity = Vector2.zero;
         _isPatrol = false;
         _playerNear = false;
         _animator.SetTrigger(AnimAttackPlayer);
         _animator.SetBool(AnimIsPatrol, _isPatrol);
         _animator.SetBool(AnimPlayerNear, _playerNear);
         PlayerController.SI.Die();
-        if (_cPatrol != null)
-            StopCoroutine(_cPatrol);
     }
 
     public void TriggerPlayer(bool lInZone)
     {
         _playerInFollowZone = lInZone;
+    }
+
+
+    public void Rebind()
+    {
+        transform.position = _initialPosition;
+        _playerInFollowZone = false;
+        _fieldOfView.ChangeOrigin(transform.position);
+        SetInitialAnim();
     }
 }

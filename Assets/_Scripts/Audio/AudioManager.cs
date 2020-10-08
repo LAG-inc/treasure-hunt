@@ -1,19 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
     //Array con las pistas de audio de las diferentes escenas
     //Es importante llevar un orden como si de un cd se tratara
     public AudioSource[] audioTracks;
+
     //Pista actual en reproduccion
     public int currentTrack;
+
     //Variable que me indica si debe o no reproducirse la pista 
     public bool audioCanBePlayed;
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (audioCanBePlayed)
         {
@@ -23,6 +23,7 @@ public class AudioManager : MonoBehaviour
             }
         }
     }
+
     //Metodo que me cambia de pista
     public void PlayNewTrack(int newTrack)
     {
@@ -34,6 +35,5 @@ public class AudioManager : MonoBehaviour
     public void StopSound()
     {
         audioTracks[currentTrack].Stop();
-
     }
 }

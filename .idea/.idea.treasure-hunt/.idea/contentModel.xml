@@ -7,10 +7,21 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="_Scripts" t="Include">
+          <e p="Audio" t="Include">
+            <e p="AudioManager.cs" t="Include" />
+            <e p="AudioNewTrack.cs" t="Include" />
+            <e p="AudioVolumenController.cs" t="Include" />
+            <e p="AudioVolumenManager.cs" t="Include" />
+            <e p="DontDestroyOnLoad.cs" t="Include" />
+            <e p="SFXManager.cs" t="Include" />
+          </e>
           <e p="Camera.cs" t="Include" />
           <e p="Coin.cs" t="Include" />
+          <e p="Door.cs" t="Include" />
           <e p="Enemy.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="LoadSceneGame.cs" t="Include" />
+          <e p="MenuManager.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="ScriptsForFov" t="Include">
             <e p="FieldOfView.cs" t="Include" />
@@ -21,7 +32,11 @@
           <e p="SoundTrigger.cs" t="Include" />
           <e p="Torch.cs" t="Include" />
           <e p="Triggers.cs" t="Include" />
+          <e p="UIManager.cs" t="Include" />
           <e p="Util.cs" t="Include" />
+        </e>
+        <e p="Fonts" t="Include">
+          <e p="BitPotion.fnt" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

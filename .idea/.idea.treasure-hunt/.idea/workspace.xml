@@ -20,34 +20,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aabd4a29-1394-4566-a015-67d49b7c60fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/NoBounce.physicsMaterial2D" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/NoBounce.physicsMaterial2D.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/NoColor.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/NoColor.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/RedTransparent.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/RedTransparent.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/RedTexture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/RedTexture.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/MainScenes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/MainScenes/Game.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/MainScenes/Game.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/MainScenes/MainMenu.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/MainScenes/MainMenu.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PlayerCam.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PlayerCam.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.treasure-hunt/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.treasure-hunt/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.treasure-hunt/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.treasure-hunt/.idea/discord.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.treasure-hunt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.treasure-hunt/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2Dmaterials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2Dmaterials.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2Dmaterials/NoBounce.physicsMaterial2D.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2Dmaterials/NoBounce.physicsMaterial2D.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Coin/Coin.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Coin/Coin.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/knight/IdleR.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/knight/IdleR.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Material.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Material.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/EnemyPatrolSystem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/EnemyPatrolSystem.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/FieldOfView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/FieldOfView.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Enemy-playerp2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Enemy-playerp2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Trasnparent.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Trasnparent.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/BlackTransition.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/BlackTransition.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/TimeLines/TimeLineIntro.playable" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/TimeLines/TimeLineIntro.playable" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/TimeLines/TimelineTimeLineGameOver.playable" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/TimeLines/TimelineTimeLineGameOver.playable" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/TimeLines/TimelineWin.playable" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/TimeLines/TimelineWin.playable" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Treasure/LightBeat.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Treasure/LightBeat.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Audio/Audio.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/Audio.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cam.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cam.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GUI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GUI.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pjs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pjs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Audio/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Audio/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Audio/SFXManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Audio/SFXManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Camera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Camera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Coin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Coin.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/ScriptsForFov/FieldOfView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptsForFov/FieldOfView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/ScriptsForFov/FieldOfView.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/ScriptsForFov/FieldOfView.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Triggers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Triggers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Torch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Torch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +65,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../Samurai/SamuraiGame/Assets/_scripts/Pjs/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2FEAF16E-8000-4E0C-ADAE-3F2E05F2A3FA/25/4f4629c9/WaitWhile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2FEAF16E-8000-4E0C-ADAE-3F2E05F2A3FA/3c/2f519540/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2FEAF16E-8000-4E0C-ADAE-3F2E05F2A3FA/08/4db70696/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65CAB14A-C59E-4552-B77F-98A4AED18F9E/09/891b6a7e/Physics2D.cs" root0="SKIP_HIGHLIGHTING" />
@@ -72,10 +79,16 @@
         <option value="$PROJECT_DIR$/Assets/_Scripts/EnemyPatrol.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Util.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Triggers.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/Camera.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptsForFov/FieldOfView.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/LoadSceneGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Coin.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Torch.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Camera.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Audio/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Audio/SFXManager.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/PlayerController.cs" />
       </list>
     </option>
   </component>
@@ -93,7 +106,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -132,6 +145,8 @@
       <workItem from="1601913990399" duration="19888000" />
       <workItem from="1602012125020" duration="2583000" />
       <workItem from="1602020380784" duration="444000" />
+      <workItem from="1602114796432" duration="22353000" />
+      <workItem from="1602144024044" duration="330000" />
     </task>
     <servers />
   </component>
@@ -161,10 +176,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="714" y="242" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1601925758984" />
-    <state x="461" y="184" key="SettingsEditor" timestamp="1602012551803">
+    <state x="461" y="184" key="SettingsEditor" timestamp="1602142354235">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="461" y="184" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1602012551803" />
+    <state x="461" y="184" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1602142354235" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1602140224635">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1080@0.0.1920.1080" timestamp="1602140224635" />
     <state x="616" y="250" width="672" height="677" key="run.anything.popup" timestamp="1601792165873">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

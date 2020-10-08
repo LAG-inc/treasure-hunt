@@ -9,7 +9,7 @@ public class Coin : MonoBehaviour
     {
         if (collider.gameObject.CompareTag("Player"))
         {
-            Debug.Log("COLISION INTERACTIVE");
+            SFXManager.SI.PlaySound(Sound.moneda);
             PlayerController.SI.AddCoin();
             CoinPickup.Invoke();
         }

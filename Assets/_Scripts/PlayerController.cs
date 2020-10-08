@@ -156,16 +156,24 @@ public class PlayerController : MonoBehaviour
 
     public bool SubtractCoins(int coins)
     {
-        if (_coins >= coins)
+        if (ObtainedNCoins(coins))
         {
             _coins -= coins;
             UIManager.sharedInstance.ResfreshCoinsText(_coins);
             return true;
         }
-
         return false;
     }
 
+    public int GetCoins()
+    {
+        return _coins;
+    }
+
+    public bool ObtainedNCoins(int coinsObtained)
+    {
+        return _coins >= coinsObtained ? true : false;
+    }
 
     public void RestartValues()
     {
@@ -173,5 +181,6 @@ public class PlayerController : MonoBehaviour
         SetInitialAnim();
         _animator.Rebind();
         transform.position = _initialPosition;
+        GameManager.SI.SetGameState(GameState.inGame);
     }
 }

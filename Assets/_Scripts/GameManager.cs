@@ -11,7 +11,8 @@ public enum GameState
 {
     inGame,
     pause,
-    gameOver
+    gameOver,
+    win
 }
 
 public class GameManager : MonoBehaviour
@@ -56,13 +57,17 @@ public class GameManager : MonoBehaviour
         if (newGameState == GameState.pause)
 
         {
-            //Show pause panel 
+            //Show pause panel
             UIManager.sharedInstance.ShowPauseMenu();
         }
         else if (newGameState == GameState.gameOver)
         {
-            //Play game over timeLine 
+            //Play game over timeLine
             GameOver.Invoke();
+        }
+        else if (newGameState == GameState.win)
+        {
+            onWin.Invoke();
         }
 
         this.currentGameState = newGameState;

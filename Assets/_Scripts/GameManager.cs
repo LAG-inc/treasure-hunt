@@ -42,7 +42,8 @@ public class GameManager : MonoBehaviour
             SetGameState(GameState.pause);
         }
 
-        if (currentGameState != GameState.gameOver || !Input.GetKeyDown(KeyCode.R)) return;
+        if (currentGameState != GameState.gameOver) return;
+
         PlayerController.SI.RestartValues();
         foreach (var enemy in _enemiesInScene)
         {

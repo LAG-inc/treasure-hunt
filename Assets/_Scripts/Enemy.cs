@@ -34,7 +34,7 @@ public class Enemy : MonoBehaviour
     private bool _playerInFollowZone;
     private Rigidbody2D _rigidbody2D;
 
-    //Animator 
+    //Animator
     private Animator _animator;
     private bool _isAlive;
     private bool _playerNear;
@@ -66,10 +66,8 @@ public class Enemy : MonoBehaviour
     //Prueba del editor para determinar el angulo al cual vera el enemigo
     [SerializeField] private float angle;
 
-
     private void Awake()
     {
-        _initialPosition = transform.position;
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _playerInFollowZone = false;
         _animator = GetComponent<Animator>();
@@ -83,9 +81,9 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
+        _initialPosition = transform.position;
         _cPatrol = StartCoroutine(Patrol());
         _fieldOfView.SetEnemy(this.gameObject);
-
         _currentPosIndex = 0;
     }
 
@@ -127,7 +125,7 @@ public class Enemy : MonoBehaviour
     }
 
     /// <summary>
-    /// Coroutine Recursiva del recorrido del enemigo. 
+    /// Coroutine Recursiva del recorrido del enemigo.
     /// </summary>
     /// <returns></returns>
     private IEnumerator Patrol()
@@ -142,7 +140,7 @@ public class Enemy : MonoBehaviour
             if (GameManager.SI.currentGameState != GameState.inGame)
                 yield return new WaitUntil(() => GameManager.SI.currentGameState == GameState.inGame);
 
-            //Al momento de detectar colisiiones es posible que tengamos que ocupar rigid bodies 
+            //Al momento de detectar colisiiones es posible que tengamos que ocupar rigid bodies
             transform.position = Vector3.MoveTowards(transform.position, _destiny, velocity * Time.deltaTime);
             yield return new WaitForFixedUpdate();
         }

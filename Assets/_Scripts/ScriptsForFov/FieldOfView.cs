@@ -48,16 +48,16 @@ public class FieldOfView : MonoBehaviour
     //Determina el vertice
     private Vector3 _vertex;
 
-    //Raycast que Verifica si el rango de vision choca con una pared 
+    //Raycast que Verifica si el rango de vision choca con una pared
     private RaycastHit2D _rayVerifyWall;
 
     //Layer para verificar las paredes
     [SerializeField] private LayerMask layerHit;
 
-    //Almacenara el angulo actual 
+    //Almacenara el angulo actual
     private float _angle;
 
-    //Angulo inicial, se reiniciara a este cada frame 
+    //Angulo inicial, se reiniciara a este cada frame
     private float _startingAngle;
 
 
@@ -78,7 +78,7 @@ public class FieldOfView : MonoBehaviour
 
     private void LateUpdate()
     {
-        //Aumento del angulo segun el campo de vision y la cantidad de rayos 
+        //Aumento del angulo segun el campo de vision y la cantidad de rayos
         _angleIncrease = fieldOfView / rayCount;
         _angle = _startingAngle;
 
@@ -119,7 +119,8 @@ public class FieldOfView : MonoBehaviour
 
             if (!_playerInZone)
             {
-                _playerInZone = Physics2D.Raycast(_origin, GetVectorFromAngle(_angle), viewDistance, playerMask);
+                _playerInZone = Physics2D.Raycast(_origin, GetVectorFromAngle(_angle),
+                Vector3.Distance(_origin, _vertex), playerMask);
             }
 
             if (_playerInZone)

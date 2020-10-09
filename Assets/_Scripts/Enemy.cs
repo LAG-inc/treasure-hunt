@@ -226,6 +226,10 @@ public class Enemy : MonoBehaviour
 
     public void Rebind()
     {
+        _currentPosIndex = 0;
+        if (_cPatrol != null)
+            StopCoroutine(_cPatrol);
+        _cPatrol = StartCoroutine(Patrol());
         transform.position = _initialPosition;
         _playerInFollowZone = false;
         _fieldOfView.ChangeOrigin(transform.position);
